@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task System</title>
+  </head>
+
+  <body>
+    <div class="board">
+      <div class="column">
+        <h2 class="columnHeader">To Do</h2>
+        <div id="toDoCards" class="cardContainer">
+          <!-- Карточки будут добавляться сюда -->
+        </div>
+        <button class="addCardBtn">Add another card</button>
+      </div>
+      <div class="column">
+        <h2 class="columnHeader">In Progress</h2>
+        <div id="progressCards" class="cardContainer">
+          <!-- Карточки будут добавляться сюда -->
+        </div>
+        <button class="addCardBtn">Add another card</button>
+      </div>
+      <div class="column">
+        <h2 class="columnHeader">Done</h2>
+        <div id="doneCards" class="cardContainer">
+          <!-- Карточки будут добавляться сюда -->
+        </div>
+        <button class="addCardBtn">Add another card</button>
+      </div>
+    </div>
+    <div class="newCardContainer">
+      <form id="newCardForm">
+        <label class="newCardFormLabel" for="cardTitle">Task:</label><br />
+        <input
+          class="newCardFormInput"
+          type="text"
+          id="cardTitle"
+          name="cardTitle"
+        />
+        <input class="newCardFormSubmit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
