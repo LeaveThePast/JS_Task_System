@@ -1,1 +1,1 @@
-![CI](https://github.com/LeaveThePast/JS_Template/actions/workflows/web.yml/badge.svg)
+![CI](https://github.com/LeaveThePast/JS_Task_System/actions/workflows/web.yml/badge.svg)
