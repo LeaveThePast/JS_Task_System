@@ -132,3 +132,11 @@
   justify-content: center;
   align-items: center;
 }
+
+/* DnD */
+.dragged {
+  position: absolute;
+  z-index: 999;
+  pointer-events: none;
+  background: #e2e4e6;
+}
