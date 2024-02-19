@@ -27,6 +27,7 @@
 /* Card */
 .cardContainer {
   margin-bottom: 10px;
+  min-height: 50px;
 }
 
 .addCardBtn {
