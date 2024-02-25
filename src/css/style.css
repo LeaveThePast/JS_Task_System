@@ -55,6 +55,12 @@
   margin-bottom: 10px;
   border: 5px solid #007bff;
   font-size: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.card:hover {
+  border: 5px solid #0056b3;
 }
 
 .closeBtn {
