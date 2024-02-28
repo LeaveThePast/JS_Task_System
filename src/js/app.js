@@ -1,5 +1,4 @@
 import Board from "./Board";
-import Controller from "./controller";
 
 document.addEventListener("DOMContentLoaded", () => {
   const addCardButtons = document.querySelectorAll(".addCardBtn");
@@ -29,11 +28,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const board = new Board();
   board.loadFromLocalStorage(board);
-
-  // Drag & Drop
-  const controller = new Controller(document.querySelector(".cardContainer"));
-
-  document.body.addEventListener("mousedown", controller.onMouseDown);
-  document.body.addEventListener("mouseup", controller.onMouseUp);
-  document.body.addEventListener("mousemove", controller.onMouseMove);
 });
