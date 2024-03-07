@@ -14,7 +14,6 @@ class Column {
   }
 
   removeCard(index, board) {
-    this.cards.splice(index, 1);
     this.renderCards(board);
   }
 
@@ -29,9 +28,7 @@ class Column {
       const removeButton = document.createElement("span");
       removeButton.textContent = "X";
       removeButton.classList.add("closeBtn");
-      removeButton.addEventListener("click", (e) =>
-        this.removeCard(index, board)
-      );
+      removeButton.addEventListener("click", (e) => this.removeCard(e, board));
       cardElement.appendChild(removeButton);
       this.cardsContainer.appendChild(cardElement);
     });
