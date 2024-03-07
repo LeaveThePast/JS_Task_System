@@ -1,7 +1,11 @@
 import Board from "./Board";
+import Sortable from "sortablejs";
 
 document.addEventListener("DOMContentLoaded", () => {
   const addCardButtons = document.querySelectorAll(".addCardBtn");
+  const toDoCardsElement = document.getElementById("toDoCards");
+  const progressCardsElement = document.getElementById("progressCards");
+  const doneCardsElement = document.getElementById("doneCards");
 
   addCardButtons.forEach((button, index) => {
     button.addEventListener("click", () => {
@@ -28,4 +32,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const board = new Board();
   board.loadFromLocalStorage(board);
+
+  // Drag & Drop
+  new Sortable(toDoCardsElement, {
+    group: "shared",
+    animation: 150,
+  });
+
+  new Sortable(progressCardsElement, {
+    group: "shared",
+    animation: 150,
+  });
+  new Sortable(doneCardsElement, {
+    group: "shared",
+    animation: 150,
+  });
 });

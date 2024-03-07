@@ -29,7 +29,7 @@ class Column {
       const removeButton = document.createElement("span");
       removeButton.textContent = "X";
       removeButton.classList.add("closeBtn");
-      removeButton.addEventListener("click", () =>
+      removeButton.addEventListener("click", (e) =>
         this.removeCard(index, board)
       );
       cardElement.appendChild(removeButton);
